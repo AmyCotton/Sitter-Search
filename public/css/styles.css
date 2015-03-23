@@ -2,11 +2,7 @@ body {
 
     background-image: url('../images/geometry2.png');
     background-repeat: repeat;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif;   
 }
 
 .teamtext {
