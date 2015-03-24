@@ -19,5 +19,5 @@
 			$_SESSION["message"] = null;
 			return $output;
 		}
-	}
+    }
 ?>

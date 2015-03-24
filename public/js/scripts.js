@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	//Reg expression to detect if a link (a tag) has just an id in it rather than a link to a page.
     $('a[href^="#"]').on('click', function(event) {
         event.preventDefault();
 	});

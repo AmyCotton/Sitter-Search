@@ -21,7 +21,7 @@
 <div class="container team-background">
 
 <div class="container">
-    <h1 class="text-center team">Meet the Team</h1>
+    <h1 class="text-center team"><strong>Meet the Team</h1></strong>
 </div>
 
 <div class="container">
@@ -49,11 +49,11 @@
 
         <div class="col-lg-4">
 
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" style="width: 200px; height: 200px;">
+            <img class="img-circle" src="images/joshk.jpg" style="width: 200px; height: 200px;">
 
             <h2 class="text-center">Josh Kelvin</h2>
 
-            <p class="teamtext">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p class="teamtext">I am a very active person, I enjoy playing sports and keeping healthy. Family,  friends and my dog are the most important thing to me. Building and designing closely follow, I have always had early aspirations as a child to invent and create. I feel my particular strengths lie within the esthetical appeal of design. In creation I believe you are just as likely to design something special by being eccentric, original and determined as by being conventional. I am hoping that by studying digital media design I will develop as a designer with my own direction and point of view.</p>
 
             <p><a class="btn btn-default" href="http://www.joshkelvin.com/blog/" role="button" style="margin-bottom: 15px">View Blog &raquo;</a></p>
 

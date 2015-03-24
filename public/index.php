@@ -20,9 +20,9 @@
 
 
 <div class="container">
-    
 
-    
+
+
 <div class="carousel">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -35,23 +35,23 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="../public/images/Quotes.jpg">
+      <img src="../public/images/Purple1.jpg">
       <div class="carousel-caption">
 
       </div>
     </div>
     <div class="item">
-      <img src="../public/images/awardwinning.jpg"
+      <img src="../public/images/purple2.jpg"
 
       </div>
     </div>
     <div class="item">
-      <img src="../public/images/theasyway.jpg">
+      <img src="../public/images/purple3.jpg">
       <div class="carousel-caption">
 
       </div>
-    </div>  
-    
+    </div>
+
 
   </div>
 
@@ -67,9 +67,9 @@
 </div>
 </div>
 
-    
+
     <div class="row">
-        
+
        <div class=col-md-8>
            <div class="row">
                <div class="col-md-12">
@@ -82,17 +82,17 @@
                                 die("Database query failed.");
                             }
 
-                            while($row = mysqli_fetch_assoc($result)) { 
+                            while($row = mysqli_fetch_assoc($result)) {
 
 
-                                include 'box1.php'; 
+                                include 'box1.php';
 
-                        } ?> 
+                        } ?>
                     </div>
                 </div>
-            </div>    
+            </div>
 		</div>
-        
+
         <div class=col-md-4>
             <div class="search">
                 <div class="searchbox">
@@ -105,29 +105,29 @@
                             <option value="gender">Gender</option?>
                             <option value="recent">Most Recent</option?>
                         </select>
-                    </form>  
-        
+                    </form>
+
                     <br>
                     <br>
-        
+
                     <form action="index.php" method="get">
                         <p><strong>Search by Location:</strong></p>
                         <input class="form-control" type="text" name="location" value>
                         <br>
                         <input class="form-control" type="submit" value="Search"?
-                    </form>  
-        
+                    </form>
+
                 </div>
             </div>
         </div>
     </div>
-    
+
 </div>
-        
-   
-    
-    
-    
+
+
+
+
+
 <?php
 
     if(isset($_POST["submit"])) {
@@ -139,51 +139,14 @@
         //$photoupload = ucfirst($_POST["photo_upload"]);
         //$cvupload = ucfirst($_POST["cv_upload"]);
     } else {
-            $fullname = "";
-            $age = "";
-            $gender = "";
-            $personalprofile = "";
-            $location = "";
-            //$photoupload = "";
-            //$cvupload = "";
-        }
+	    $fullname = "";
+	    $age = "";
+	    $gender = "";
+	    $personalprofile = "";
+	    $location = "";
+	    //$photoupload = "";
+	    //$cvupload = "";
+	}
 ?>
-
-<?php
-    if(isset($_POST["submit"])) {
-
-        if(empty($fullname)) {
-            $message = "Invalid name";
-        } else if(empty($age)) {
-            $message = "Invalid age";
-        } else if(empty($gender)) {
-            $message = "Please select gender";
-        } else if(empty($personalprofile)) {
-            $message = "Invalid personal profile";
-        } else if(empty($location)) {
-            $message = "Invalid location";
-        } //else if(empty($photoupload)) {
-            //$message = "Invalid photo upload";
-         else {
-            $query = "INSERT INTO newpost (full_name, age, gender, bio, location) VALUES ('{$fullname}', '{$age}', '{$gender}', '{$personalprofile}', '{$location}', <-)";
-            $result = mysqli_query($connect, $query);
-
-            if($result) {
-                $message = "Success, your post was added";
-            } else {
-                $message = "Sorry, something went wrong with your post";
-            }
-
-            $fullname = "";
-            $age = "";
-            $gender = "";
-            $personalprofile = "";
-            $location = "";
-            //$photoupload = "";
-            //$cvupload = "";
-
-        }
-    }
-        ?>
 
 <?php include_once("../includes/templates/footer.php"); ?>
