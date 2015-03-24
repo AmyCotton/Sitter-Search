@@ -10,6 +10,7 @@
 
     if(isset($_POST["post"])) {
         $fullname = ucfirst($_POST["full_name"]);
+        $email = ucfirst($_POST["email"]);
         $age = ucfirst($_POST["age"]);
         $gender = ucfirst($_POST["gender"]);
         $personalprofile = ucfirst($_POST["bio"]);
@@ -17,7 +18,7 @@
         //$photoupload = ucfirst($_POST["photo_upload"]);
         //$cvupload = ucfirst($_POST["cv_upload"]);
 
-        $query = "INSERT INTO newpost (full_name, age, gender, bio, location) VALUES ('{$fullname}', '{$age}', '{$gender}', '{$personalprofile}', '{$location}')";
+        $query = "INSERT INTO newpost (full_name, email, age, gender, bio, location) VALUES ('{$fullname}', '{$email}', '{$age}', '{$gender}', '{$personalprofile}', '{$location}')";
         $result = mysqli_query($connection, $query);
 
         if($result) {
@@ -27,6 +28,7 @@
         }
     } else {
             $fullname = "";
+            $email = "";
             $age = "";
             $gender = "";
             $personalprofile = "";
@@ -47,6 +49,10 @@
                     <div class="form-group">
 	<label for="inputName">Full Name</label>
 		<input type="text" class="form-control" name="full_name" id="exampleInputName2" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+	<label for="inputName">Email Address</label>
+		<input type="text" class="form-control" name="email" id="exampleInputName2" placeholder="Enter Your Email Address">
                     </div>
 
                     <div class="form-group">
@@ -72,8 +78,9 @@
 	<label for="inputName">Location</label>
 		<input type="text" class="form-control" name="location" id="exampleInputName2" placeholder="Location">
                     </div>
-
-                     <div class="form-group">
+                    
+                    
+                     <!--<div class="form-group">
                         <label for="exampleInputFile">Photo Upload</label>
                         <input type="file" id="exampleInputFile">
                     </div>
