@@ -1,9 +1,8 @@
 body {
-    background-color: #fcfcfc;
-    background-image: url(../images/pattern-ckah.png);
+    background-color: rgba(104, 140, 255, 0.69);
     background-repeat: repeat;
     font-family: 'Roboto', sans-serif;
-    padding: 50px;
+    padding: 65px;
 }
 
 .teamtext {
@@ -40,8 +39,6 @@ body {
 }
 
 .team-background {
-    background: rgba(0, 0, 0, 0.06);
-    border: 3px solid #996DF6;
     margin-bottom: 30px;
     border-radius: 7px;
     margin-top: 10px;
