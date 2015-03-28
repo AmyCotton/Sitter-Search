@@ -1,6 +1,6 @@
 <?php 
     
-    function redirectTo($toPage) {
+function redirectTo($toPage) {
         header("Location: " . $toPage);
         exit; 
     }

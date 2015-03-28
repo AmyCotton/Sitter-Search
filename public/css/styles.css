@@ -1,8 +1,9 @@
 body {
-    background-color: rgba(104, 140, 255, 0.69);
+    background-color: rgba(54, 55, 56, 0.85);
     background-repeat: repeat;
     font-family: 'Roboto', sans-serif;
     padding: 65px;
+    color: #fff;
 }
 
 .teamtext {
@@ -32,10 +33,13 @@ body {
     padding: 15px;
     border: 1px solid transparent;
     border-radius: 4px;
-    color: #797779;
-    background-color: rgba(216, 216, 216, 0.58);
-    border-color: #adadad;
+    color: #343333;
+    background-color: rgba(252, 248, 248, 0.54);
+    border-color: #656565;
 
+}
+.img-circle {
+    border: 3px solid #E8F332;
 }
 
 .team-background {
@@ -63,7 +67,6 @@ body {
 .carousel {
     margin-bottom: 30px;
     margin-top: 20px;
-    opacity: 0.85;
 }
 
 .loginbtn {
@@ -98,10 +101,10 @@ body {
 
 
 .box1 {
-    background: rgba(255, 252, 252, 0.81);
+    background: #464646;
     float: right;
     margin-bottom: 15px;
-    border: 3px solid #3A0757;
+    border: 3px solid #2ABA93;
     padding: 10px;
     opacity: 0.7;
     min-width: 100%;
@@ -133,7 +136,7 @@ body {
 }
 
 .logocolour {
-    color: #3A0757;
+    color: #FF5028;
     font-size: 25px;
     font-weight: 300;
 }
@@ -141,24 +144,24 @@ body {
 .time_ago {
     opacity: 0.7;
     float: right;
-    color: #3A0757;
+    color: #FF5028;
 
 }
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, .0001) 100%);
-  background-image:      -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.0001) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.0001)));
-  background-image:         linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, .0001) 100%);
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255) 0%, rgba(255, 255, 255) 100%);
+  background-image:      -o-linear-gradient(left, rgba(255, 255, 255,) 0%, rgba(255, 255, 255) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255)), to(rgba(255, 255, 255)));
+  background-image:         linear-gradient(to right, rgba(255, 255, 255) 0%, rgba(255, 255, 255) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
   background-repeat: repeat-x;
 }
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, .0001) 0%, rgba(255, 255, 255, 0.5) 100%);
-  background-image:      -o-linear-gradient(left, rgba(255, 255, 255, .0001) 0%, rgba(255, 255, 255, 0.5) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .0001)), to(rgba(0, 0, 0, .5)));
-  background-image:         linear-gradient(to right, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.5) 100%);
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255) 0%, rgba(255, 255, 255) 100%);
+  background-image:      -o-linear-gradient(left, rgba(255, 255, 255) 0%, rgba(255, 255, 255) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255)), to(rgba(0, 0, 0)));
+  background-image:         linear-gradient(to right, rgba(255, 255, 255) 0%, rgba(255, 255, 255) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
 }

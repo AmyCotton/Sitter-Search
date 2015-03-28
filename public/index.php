@@ -65,18 +65,18 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="../public/images/bluebanner.jpg">
+      <img src="../public/images/new1.jpg">
       <div class="carousel-caption">
 
       </div>
     </div>
     <div class="item">
-      <img src="../public/images/bluebanner2.jpg"
+      <img src="../public/images/amy%202.jpg"
 
       </div>
     </div>
     <div class="item">
-      <img src="../public/images/bluebanner3.jpg">
+      <img src="../public/images/amy%203.jpg">
       <div class="carousel-caption">
 
       </div>
@@ -180,6 +180,15 @@
 	    //$photoupload = "";
 	    //$cvupload = "";
 	}
+    
+
 ?>
+
+<nav>
+  <ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</nav>
 
 <?php include_once("../includes/templates/footer.php"); ?>

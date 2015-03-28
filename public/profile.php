@@ -26,7 +26,10 @@
         } else {
             $_SESSION["message"] = "something went wrong";
         }
-    } else {
+    } else 
+
+    
+            {
             $fullname = "";
             $email = "";
             $age = "";
@@ -36,6 +39,7 @@
             //$photoupload = "";
             //$cvupload = "";
         }
+
 ?>
 
 <div class="container">
@@ -88,7 +92,7 @@
                     <div class="form-group">
                         <label for="exampleInputFile">CV Upload (optional)</label>
                         <input type="file" id="exampleInputFile">
-                    </div>
+                    </div>-->
                     <input type="submit" name="post" class="btn btn-default">
                 </form>
                 </div>

@@ -18,7 +18,7 @@
         <input type="password" class="form-control" name="cpassword" id="exampleInputPassword1" placeholder="Confirm Password">
 </div>
         <button type="submit" name="signup" class="btn btn-default">Sign Up</button>
-                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        
                         
 	                </form>
 	            </div>
