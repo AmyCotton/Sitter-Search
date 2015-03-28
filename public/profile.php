@@ -15,16 +15,17 @@
         $gender = ucfirst($_POST["gender"]);
         $personalprofile = ucfirst($_POST["bio"]);
         $location = ucfirst($_POST["location"]);
+        $user_id = $_SESSION["user_id"];
         //$photoupload = ucfirst($_POST["photo_upload"]);
         //$cvupload = ucfirst($_POST["cv_upload"]);
 
-        $query = "INSERT INTO newpost (full_name, email, age, gender, bio, location) VALUES ('{$fullname}', '{$email}', '{$age}', '{$gender}', '{$personalprofile}', '{$location}')";
+        $query = "INSERT INTO newpost (user_id, full_name, email, age, gender, bio, location) VALUES ('{$_SESSION['user_id']}', '{$fullname}', '{$email}', '{$age}', '{$gender}', '{$personalprofile}', '{$location}')";
         $result = mysqli_query($connection, $query);
 
         if($result) {
             $_SESSION["message"] = "Post successful";
         } else {
-            $_SESSION["message"] = "something went wrong";
+            $_SESSION["message"] = "Something went wrong!";
         }
     } else 
 

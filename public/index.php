@@ -65,18 +65,18 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="../public/images/new1.jpg">
+      <img src="../public/images/greybanner1.jpg">
       <div class="carousel-caption">
 
       </div>
     </div>
     <div class="item">
-      <img src="../public/images/amy%202.jpg"
+      <img src="../public/images/greybanner2.jpg"
 
       </div>
     </div>
     <div class="item">
-      <img src="../public/images/amy%203.jpg">
+      <img src="../public/images/greybanner3.jpg">
       <div class="carousel-caption">
 
       </div>

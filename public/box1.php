@@ -9,6 +9,17 @@
     ?>
     
     <div class="time_ago" <h2><?php echo "".$when; ?></h2> </div>
+     
+    <?php if(isset($_SESSION["user"])) { ?>
+ 
+
+      <?php if ($_SESSION["user_id"]==$row["user_id"]) {?>
+        <div class="delete" id="delete_post"><a href="delete_post.php?id=<?php echo $row["id"]; ?>"><button type="button" class="btn btn-danger">Delete Post</button></a></div>
+<?php } ?>
+<?php } else { ?>
+    <?php } ?>
+        
+    
     
         <h3><?php echo $row["full_name"]; ?></h3>
         <p class="teamtext"><?php echo $row["email"]; ?></p>
