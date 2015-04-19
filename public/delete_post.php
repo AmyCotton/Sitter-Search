@@ -6,7 +6,6 @@
     if(isset($_GET["id"])) {
         $postID = $_GET["id"]; 
         $userID = $_SESSION["user_id"];
-        
         $query = "DELETE FROM newpost WHERE id = '{$postID}' and user_id = '{$_SESSION['user_id']}'";
         $result = mysqli_query($connection, $query); 
     } else {

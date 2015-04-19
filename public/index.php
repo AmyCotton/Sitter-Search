@@ -1,3 +1,4 @@
+<!--This loads in all of the other files so the code knows what to link to-->
 <?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/connect.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
@@ -6,6 +7,7 @@
 <a name="formlogin"></a>
 <a name="formsignup"></a>
 
+<!--This hides the log in button when the user is logged in and hides the sign up box if the user is logged in-->
 <?php
     if(!isset($_SESSION["username"])) {
         include("../includes/templates/login-box.php");
@@ -18,6 +20,7 @@
     }
 ?>
 
+<!--This is the section of code which means we can filter through the data on the profile form. -->
 
 <?php
 
@@ -49,6 +52,8 @@
 
 
 ?>
+
+<!--This is the carousel bootstrap code that we found o nthe bootstrap website. This is were we placed out images that we wanted in the carousel and added controls to the carousel so people can navigate through the slides.-->
 
 
 <div class="container">
@@ -97,7 +102,8 @@
 </div>
 </div>
 
-
+<!--This is the filters that appear on the hompage which sort the profiles in various different ways. We also set this so that if you selected the option from the dropdown list, it would refresh the page automatically.-->
+    
     <div class="row">
 
         <div class=col-md-4>
@@ -118,7 +124,7 @@
 
                     <br>
                     <br>
-
+<!--This is the form to sort the profile by location.-->
                     <form action="index.php" method="post">
                         <p><strong>Search by Location:</strong></p>
                         <input class="form-control" type="text" name="location" value>
@@ -129,7 +135,7 @@
                 </div>
             </div>
         </div>
-
+<!--This code connects the site to the PHPMyAdmin database and tells us if the database is not connected.-->
        <div class=col-md-8>
            <div class="row">
                <div class="col-md-12">
@@ -169,26 +175,19 @@
         $gender = ucfirst($_POST["gender"]);
         $personalprofile = ucfirst($_POST["bio"]);
         $location = ucfirst($_POST["location"]);
-        //$photoupload = ucfirst($_POST["photo_upload"]);
-        //$cvupload = ucfirst($_POST["cv_upload"]);
+
     } else {
 	    $fullname = "";
 	    $age = "";
 	    $gender = "";
 	    $personalprofile = "";
 	    $location = "";
-	    //$photoupload = "";
-	    //$cvupload = "";
+
 	}
     
 
 ?>
 
-<nav>
-  <ul class="pager">
-    <li><a href="#">Previous</a></li>
-    <li><a href="#">Next</a></li>
-  </ul>
-</nav>
+<!--This places the footer in the index page.-->
 
 <?php include_once("../includes/templates/footer.php"); ?>
