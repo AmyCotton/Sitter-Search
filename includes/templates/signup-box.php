@@ -1,3 +1,4 @@
+<!--This is a bootstrap form which is the style of the signup box-->
 <div class="container">
     <div class="signup-box jumbotronsignup">
     	<div class="row">

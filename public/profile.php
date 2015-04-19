@@ -1,13 +1,16 @@
+<!--This loads in all of the other files so the code knows what to link to-->
 <?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/connect.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
 <?php include_once("../includes/templates/header.php"); ?>
 
+<!--This anchors the login and signup toggle boxes to the top of the page-->
 <a name="formlogin"></a>
 <a name="formsignup"></a>
 
 <?php
 
+//This section inputs the users information that will appear on the homepage
     if(isset($_POST["post"])) {
         $fullname = ucfirst($_POST["full_name"]);
         $email = ucfirst($_POST["email"]);
@@ -16,8 +19,6 @@
         $personalprofile = ucfirst($_POST["bio"]);
         $location = ucfirst($_POST["location"]);
         $user_id = $_SESSION["user_id"];
-        //$photoupload = ucfirst($_POST["photo_upload"]);
-        //$cvupload = ucfirst($_POST["cv_upload"]);
 
         $query = "INSERT INTO newpost (user_id, full_name, email, age, gender, bio, location) VALUES ('{$_SESSION['user_id']}', '{$fullname}', '{$email}', '{$age}', '{$gender}', '{$personalprofile}', '{$location}')";
         $result = mysqli_query($connection, $query);
@@ -37,12 +38,11 @@
             $gender = "";
             $personalprofile = "";
             $location = "";
-            //$photoupload = "";
-            //$cvupload = "";
         }
 
 ?>
 
+<!--This is a bootstrap form that the user inputs the information to and connects to the above code to then be sent off to the database-->
 <div class="container">
     <h3 class="post">New Post</h3>
     <div class="jumbotronlogin">
@@ -85,15 +85,6 @@
                     </div>
                     
                     
-                     <!--<div class="form-group">
-                        <label for="exampleInputFile">Photo Upload</label>
-                        <input type="file" id="exampleInputFile">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="exampleInputFile">CV Upload (optional)</label>
-                        <input type="file" id="exampleInputFile">
-                    </div>-->
                     <input type="submit" name="post" class="btn btn-default">
                 </form>
                 </div>
@@ -105,5 +96,5 @@
 
 
 
-
+<!--This inserts the footer onto the page-->
 <?php include_once("../includes/templates/footer.php"); ?>

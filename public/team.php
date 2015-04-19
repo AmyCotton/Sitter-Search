@@ -1,11 +1,14 @@
+<!--This loads in all of the other files so the code knows what to link to-->
 <?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/connect.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
 <?php include_once("../includes/templates/header.php"); ?>
 
+<!--This anchors the login and signup box to the top of the page-->
 <a name="formlogin"></a>
 <a name="formsignup"></a>
     
+<!--This hides the log in button when the user is logged in and hides the sign up box if the user is logged in-->
 <?php 
     if(!isset($_SESSION["username"])) {
         include("../includes/templates/login-box.php");
@@ -18,12 +21,14 @@
     } 
 ?>
 
+<!--This is the main container that all the information about the team is inputted. It uses bootstrap classes, columns and rows. -->
 <div class="container team-background">
 
 <div class="container">
     <h1 class="text-center team"><strong>Meet the Team</h1></strong>
 </div>
 
+<!--These three chunks of code include each team member, a short bio and a round image.-->
 <div class="container">
     <div class="row">
         <div class="col-lg-4">
@@ -65,4 +70,5 @@
 
 </div>
 
+<!--This includes the footer into the team page-->
 <?php include_once("../includes/templates/footer.php"); ?>

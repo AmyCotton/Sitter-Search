@@ -1,3 +1,4 @@
+/*This file contains all the styles included in the site, it overwrites the bootstrap styling so that if we wanted to change the colour it was easier to just overwrite the original class and create our own*/
 body {
     background-color: rgba(54, 55, 56, 0.85);
     background-repeat: repeat;
